@@ -1,12 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-</head>
-<body>
+    <title>Psychic Game</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
     
+</head>
+
+<body>
+    <div class="container">
+        <h1>The Psychic Game</h1>
+        <p>Guess what letter I'm thinking of</p><br>
+        <p>Wins: <span id="winsspan"></span></p>
+        <p>Losses: <span id="lossesspan"></span></p>
+        <p>Guesses Left: <span id="guessesleftspan"></span></p>
+        <p>Your Guesses so far: <span id="guessesspan"></span></p>
+    </div>
+    <script src="assets/javascript/game.js"></script>
 </body>
+
 </html>
