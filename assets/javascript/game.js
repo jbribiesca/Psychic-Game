@@ -12,18 +12,23 @@ var guessesArr = document.getElementById("guessesspan");
 var randomLetter = Math.floor(Math.random() * alphabet.length); 
 var letter = alphabet[randomLetter];
 
+function random(){
+    randomLetter = Math.floor(Math.random() * alphabet.length); 
+    letter = alphabet[randomLetter];
+}
+
 document.onkeyup = function(event) { 
 
         var userGuess = event.key.toLowerCase()
         console.log(letter);
         console.log(event.key);
-
             if (userGuess === letter) {
                 wins++;
                 guessesLeft = 9;
-                guesses = []
+                guesses = [];
+                random();
             }
-            if (userGuess != letter){
+            else if (userGuess != letter){
                 guessesLeft--;
                 guesses.push(userGuess);
             }
@@ -31,6 +36,7 @@ document.onkeyup = function(event) { 
                 losses++;
                 guessesLeft = 9;
                 guesses = [];
+                random();
             }
 
         winsText.textContent = wins;
